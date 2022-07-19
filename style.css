@@ -1,0 +1,15 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* varriables */
+:root {
+  --Frence-violate: #6622cc;
+  --black-chocolate: #1e2019;
+  --black: #161616;
+}
+/*====================
+    Base Style 
+ ======================*/
+body {
+  font-family: "Poppins", sans-serif;
+}
