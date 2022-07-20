@@ -1,15 +1,145 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-/* varriables */
+/* varriables & RESET */
 :root {
   --Frence-violate: #6622cc;
   --black-chocolate: #1e2019;
   --black: #161616;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+img {
+  display: block;
+  /* max-width: 100%; */
 }
 /*====================
     Base Style 
  ======================*/
 body {
   font-family: "Poppins", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 1321px;
+  margin: 50px 0;
+}
+/*===================
+Hero Styles 
+=====================*/
+.hero {
+  background-color: var(--black-chocolate);
+  display: flex;
+  align-items: center;
+  height: 646px;
+  border-radius: 30px;
+}
+.hero-info {
+  width: 531px;
+  margin-left: 106px;
+}
+.hero-info h1 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  color: white;
+}
+.hero-info p {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin: 30px 0 40px 0;
+}
+.hero-img img {
+  width: 581px;
+  height: 613px;
+}
+.hero-info a {
+  color: white;
+  text-decoration: none;
+  background-color: var(--Frence-violate);
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+/*========================
+        Main Content 
+ =========================*/
+.main-content {
+  display: flex;
+}
+.navbar {
+  background-color: var(--black-chocolate);
+  width: 312px;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+}
+.menu a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 64px;
+  background-color: white;
+  margin-top: 10px;
+  text-align: center;
+  width: 252px;
+  height: 64px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+#selected {
+  background-color: var(--Frence-violate);
+  color: white;
+}
+.matches {
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.match {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 50px 30px;
+}
+.flag {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.flag h2 {
+  margin: 0 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.match-details h2 {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #161616;
+  margin-bottom: 10px;
+}
+.match-details p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4d4d4d;
+  text-align: center;
 }
