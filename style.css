@@ -31,7 +31,7 @@ main {
   align-items: center;
 }
 .container {
-  width: 1321px;
+  max-width: 1321px;
   margin: 50px 0;
 }
 /*===================
@@ -41,7 +41,7 @@ Hero Styles
   background-color: var(--black-chocolate);
   display: flex;
   align-items: center;
-  height: 646px;
+  /* min-height: 600px; */
   border-radius: 30px;
 }
 .hero-info {
@@ -236,7 +236,7 @@ footer .link a {
 /* For Mobile devises */
 @media only screen and (max-width: 576px) {
   .container {
-    width: 90vw;
+    max-width: 520px;
   }
   .hero {
     flex-direction: column;
@@ -254,6 +254,7 @@ footer .link a {
   .hero-info h1 {
     font-size: 22px;
     line-height: 33px;
+    font-weight: 700;
   }
   .hero-info p {
     white-space: nowrap;
@@ -293,7 +294,7 @@ footer .link a {
 /* For Tablet devises */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .container {
-    width: 95vw;
+    max-width: 900px;
   }
   .hero {
     height: 70vh;
@@ -328,17 +329,18 @@ footer .link a {
     padding: 0 20px;
     width: 80vw;
   }
-  .navbar a {
+  .menu a {
     border: 1px solid #e8e8e8;
     width: 230px;
     margin: 0 5px;
+    margin: 0;
   }
   .matches,
   .blogs {
     grid-template-columns: 1fr 1fr;
     gap: 20px 10px;
-    padding: 50px;
-    margin: 30px 0 0 0;
+    padding: 0px 50px 30px 50px;
+    margin: 0;
   }
   .view-all {
     display: block;
@@ -353,5 +355,22 @@ footer .link a {
     margin: 0 auto;
   }
   footer {
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1220px) {
+  .hero {
+    min-height: 90vh;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .container {
+    max-width: 1000px;
+  }
+  .matches,
+  .blogs {
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 }
