@@ -109,7 +109,8 @@ Hero Styles
   background-color: var(--Frence-violate);
   color: white;
 }
-.matches {
+.matches,
+.blogs {
   margin-left: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -146,8 +147,37 @@ Hero Styles
   color: #4d4d4d;
   text-align: center;
 }
+
 .view-all {
   display: none;
+}
+/* blog */
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+  width: 312px;
+}
+.blog-img img {
+}
+.blog-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.blog-details button {
+  margin: 30px;
+}
+.transfer-btn {
+  margin: 20px;
+}
+.blog .match-details h2 {
+  text-align: left;
+  font-size: 18;
+  font-weight: 600;
+  padding: 5px 10px;
 }
 /*=========================
  Footer 
@@ -221,7 +251,8 @@ footer .link a {
     flex-direction: column;
     align-items: center;
   }
-  .matches {
+  .matches,
+  .blogs {
     grid-template-columns: 1fr;
     margin: 30px 0 0 0;
   }
@@ -285,9 +316,10 @@ footer .link a {
     width: 230px;
     margin: 0 5px;
   }
-  .matches {
+  .matches,
+  .blogs {
     grid-template-columns: 1fr 1fr;
-    gap: 20px 00px;
+    gap: 20px 10px;
     padding: 50px;
     margin: 30px 0 0 0;
   }
